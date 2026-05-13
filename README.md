@@ -52,7 +52,6 @@ The paper is unusually explicit (§6) about the domain mismatches and interpreti
 ## Read the Paper
 
 - **[paper.pdf](paper.pdf)** — full academic paper (v0.4)
-- **[article.html](article.html)** — accessible web version
 - **[Zenodo record](https://doi.org/10.5281/zenodo.20163451)** — archived with DOI
 - **[Website article](https://windstorminstitute.org/articles/compton-corollary.html)** — long-form companion
 
