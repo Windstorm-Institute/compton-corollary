@@ -2,7 +2,7 @@
 
 **Bekenstein's Bound at the Compton Scale of a Massive Elementary Particle: A Hilbert-Space Ceiling and a Numerical Coincidence with the Exceptional Lie Group Sequence**
 
-Grant Lavell Whitmer III · Windstorm Institute · Fort Ann, NY, USA
+Grant Lavell Whitmer III · Windstorm Labs, The Windstorm Institute · Fort Ann, NY, USA
 
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20163451-blue)](https://doi.org/10.5281/zenodo.20163451)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey)](https://creativecommons.org/licenses/by/4.0/)
