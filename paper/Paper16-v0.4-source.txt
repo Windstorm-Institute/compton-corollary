@@ -176,10 +176,10 @@ log2 D/ log2 e2π
 49.7%
 92.6%
 
-51.6%
-76.9%
+53.0%
+73.9%
 80.4%
-89.0%
+88.9%
 98.8%
 
 Metric note. The two ratio columns above describe the same underlying agreement: by

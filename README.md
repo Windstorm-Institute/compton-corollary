@@ -32,10 +32,10 @@ The five Cartan-exceptional simple Lie algebras have adjoint dimensions 14, 52, 
 
 | Group | dim adj | D = 2·dim(adj) | D / *e*<sup>2π</sup> | log₂*D* / log₂*e*<sup>2π</sup> |
 |---|---:|---:|---:|---:|
-| G₂ | 14 | 28 | 5.2% | 51.6% |
-| F₄ | 52 | 104 | 19.4% | 76.9% |
+| G₂ | 14 | 28 | 5.2% | 53.0% |
+| F₄ | 52 | 104 | 19.4% | 73.9% |
 | E₆ | 78 | 156 | 29.1% | 80.4% |
-| E₇ | 133 | 266 | 49.7% | 89.0% |
+| E₇ | 133 | 266 | 49.7% | 88.9% |
 | **E₈** | **248** | **496** | **92.6%** | **98.8%** |
 
 The exceptional sequence climbs monotonically toward the Compton-Bekenstein ceiling. **E₈ sits at 92.6% of *e*<sup>2π</sup> (98.8% in log₂ units).** The Cartan classification terminates with E₈; no E₉ exists. The largest natural exceptional dimension falls below the formal ceiling by **7.4% (linear)** or **1.2% (log₂)**.
