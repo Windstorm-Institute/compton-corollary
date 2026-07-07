@@ -1,0 +1,275 @@
+\documentclass[11pt]{article}
+\usepackage{wsi-style-lua}
+\usepackage{amsmath}
+\newcommand{\Nesc}{\mathcal{N}_{\mathrm{esc}}}
+\newcommand{\lbar}{\bar\lambda_{C}}
+\wsirunhead{Bekenstein's Bound at the Compton Scale}
+\title{Bekenstein's Bound at the Compton Scale of a Massive\\[2pt]
+\large Elementary Particle: A Hilbert-Space Ceiling and a Numerical\\
+Coincidence with the Exceptional Lie Group Sequence}
+\author{Grant Whitmer}
+\date{May 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We record an elementary observation. Bekenstein's bound, evaluated at the reduced Compton
+wavelength $\lbar = \hbar/(mc)$ of a massive elementary particle of rest energy $E = mc^{2}$,
+gives a mass-independent saturation of $2\pi$ nats---a formal ceiling
+$D \le e^{2\pi} \approx 535.49$ on the particle's internal Hilbert-space dimension. The bound is
+applied at the boundary of its domain, where localization to $\lbar$ meets the pair-production
+threshold; all massive Standard Model particles satisfy it comfortably ($D \le 12$). We then note
+a numerical coincidence: the adjoint dimension $2\,\dim(\mathrm{adj}\,E_{8}) = 496$ sits at
+$92.6\%$ of $e^{2\pi}$ ($98.8\%$ in $\log_{2}$), and the exceptional Lie sequence
+$G_{2}, F_{4}, E_{6}, E_{7}, E_{8}$---which the Cartan classification terminates at $E_{8}$---climbs
+monotonically toward this point. We are explicit about what this does \emph{not} show: we cannot
+distinguish coincidence, selection effect, or structural significance, and because the gauge bosons
+of unbroken symmetries are massless with no Compton scale, the coincidence reading is the most
+defensible. We record the pattern for future reference as a short empirical observation, not a
+derived constraint.
+\end{abstract}
+
+\section{The bound at the Compton scale}
+
+The Bekenstein bound~[1] states that the entropy of any weakly-gravitating system of energy $E$
+confined to a region of size $R$ satisfies
+\begin{equation}
+  S \le \frac{2\pi k_{B} R E}{\hbar c}.
+\end{equation}
+Evaluated at the reduced Compton wavelength $R = \lbar \equiv \hbar/(mc)$ of an elementary particle
+with rest energy $E = mc^{2}$,
+\begin{equation}
+  S_{\max}(\lbar) = 2\pi k_{B}
+  \quad\Longleftrightarrow\quad
+  D \le \exp(2\pi) \approx 535.49,
+\end{equation}
+where $D$ is the dimension of the particle's internal Hilbert space (spin states $\times$ color
+charge $\times$ any other gauge index). The value is mass-independent: the factor $m$ in $E$ cancels
+the factor $1/m$ in $R$. This is direct cancellation in the bound, not a derivation. We denote the
+function value with the escrow-series notation~[9], $\Nesc(E, L) \equiv 2\pi E L/(\hbar c)$,
+recognizing that the function is Bekenstein's; we do not invoke the escrow recipe, which applies only
+to the gravitational regimes of~[9] and not to a free elementary particle in vacuum.
+
+\subsection{Domain of applicability}
+
+Two caveats are immediate and important.
+
+\textit{Localization at the boundary.} Confining a single elementary particle to its own reduced
+Compton wavelength saturates the relativistic localization theorem~[4,5]: $\Delta x \sim \lbar$
+forces $\Delta p \sim mc$, which is the threshold for pair production. A wavepacket of Compton width
+is not strictly a single-particle state; particle--antiparticle pair contamination is unavoidable at
+this scale. The bound~(2) is therefore being applied at the boundary of Bekenstein's formal domain.
+What is well-defined in this limit is the per-species internal Hilbert dimension $D$ at the level of
+the field's representation content; the spatial localization is singular and the bound is to be read
+as a formal counting statement rather than a literal claim about a sharply localized particle.
+
+\textit{Massless particles do not have a Compton scale.} The reduced Compton wavelength
+$\lbar = \hbar/(mc)$ diverges as $m \to 0$. The bound~(2) therefore does not apply at any finite
+scale to massless gauge bosons (photon, gluon, gauge bosons of any unbroken gauge symmetry). This
+excludes the most familiar case where ``internal gauge structure'' provides large multiplicities.
+These two caveats restrict the bound's reach to massive elementary particles, evaluated formally at
+their own Compton scale with the understanding that the localization is at the limit of
+single-particle description.
+
+\section{Standard Model survey}
+
+Restricted to massive elementary particles:
+\begin{center}
+\begin{tabular}{lcc}
+\toprule
+Particle & $D$ & qubits ($\log_{2} D$) \\
+\midrule
+Higgs scalar (physical) & 1 & 0 \\
+Charged lepton (Dirac) & 4 & 2.00 \\
+Quark (Dirac $\times$ 3-color) & 12 & 3.58 \\
+$W^{\pm}, Z$ (3 polarizations) & 3 & 1.58 \\
+\bottomrule
+\end{tabular}
+\end{center}
+All massive Standard Model elementary particles satisfy~(2) comfortably ($D \le 12$,
+$\log_{2} D \le 3.58$, against a ceiling of $9.06$ qubits). The photon and gluon are massless and
+outside the bound's domain. The bound therefore imposes no constraint on observed particles. It is a
+formal ceiling that becomes interesting only for hypothetical heavy particles with rich internal
+structure.
+
+\section{A numerical coincidence: the exceptional Lie group sequence}
+
+\textit{Caveat first.} The comparison displayed in this section runs across a domain mismatch that we
+acknowledge explicitly here, rather than relegating to the limitations section. The bound~(2) applies
+to massive elementary particles with their own Compton wavelength. The quantity
+$2\,\dim(\mathrm{adj}\,G)$ that we compare to $e^{2\pi}$ is the natural one-particle-state count for a
+gauge boson of an \emph{unbroken} gauge symmetry---where the gauge boson is massless and has no finite
+$\lbar$ at which to apply the bound. The two numbers therefore refer to physically distinct settings.
+We display the comparison anyway because the numerical pattern is the paper's empirical content, and
+the reader should see it together with the caveat rather than have either suppressed (see also
+\S6(d)).
+
+The Cartan classification of simple Lie algebras includes five exceptional algebras of finite
+dimension: $G_{2}, F_{4}, E_{6}, E_{7}, E_{8}$, with adjoint dimensions $14, 52, 78, 133, 248$
+respectively. Forming the one-particle-state count $D = 2\,\dim(\mathrm{adj}\,G)$:
+\begin{center}
+\begin{tabular}{lcccc}
+\toprule
+Group & $\dim\mathrm{adj}$ & $D = 2\dim(\mathrm{adj})$ & $D/e^{2\pi}$ & $\log_{2} D/\log_{2} e^{2\pi}$ \\
+\midrule
+$G_{2}$ & 14  & 28  & 5.2\%  & 53.0\% \\
+$F_{4}$ & 52  & 104 & 19.4\% & 73.9\% \\
+$E_{6}$ & 78  & 156 & 29.1\% & 80.4\% \\
+$E_{7}$ & 133 & 266 & 49.7\% & 88.9\% \\
+$E_{8}$ & 248 & 496 & 92.6\% & 98.8\% \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\textit{Metric note.} The two ratio columns describe the same underlying agreement: by definition
+$\log_{2} D/\log_{2} e^{2\pi} = (\ln 2 \cdot \log_{2} D)/(2\pi)$, so the $\log_{2}$ ratio is
+determined by the linear ratio. We report both because the choice of metric substantially changes the
+perceived strength of the agreement ($92.6\%$ vs.\ $98.8\%$ for $E_{8}$). Reporting only the
+$\log_{2}$ figure would invite an accusation of metric cherry-picking; reporting only the linear
+figure would understate the visual character of the pattern.
+
+The Cartan classification of exceptional simple Lie algebras terminates with $E_{8}$; no $E_{9}$
+exists. The largest natural exceptional dimension falls below the formal Compton--Bekenstein ceiling
+of~(2) by $7.4\%$ in linear units, or $1.2\%$ in $\log_{2}$ units. This is a numerical coincidence
+between a transcendental constant ($e^{2\pi}$, from a localized-particle Bekenstein evaluation in the
+massive-particle setting) and a Lie-algebra-classification fact ($\dim E_{8} = 248$, from the geometry
+of root systems in the unbroken gauge-symmetry setting). The reader may judge its significance.
+
+\section{Three interpretations}
+
+In the spirit of disciplined hedging, the coincidence admits three readings.
+\begin{itemize}
+\item[\textbf{(A)}] \textbf{Coincidence.} $e^{2\pi}$ and $2\cdot 248$ happen to be close. The
+exceptional Lie algebra classification has structural reasons (terminating at $E_{8}$ due to the
+geometry of root systems and the behavior of the Weyl group) that have no obvious relation to
+relativistic information bounds. \emph{Most defensible reading absent further argument.}
+\item[\textbf{(B)}] \textbf{Selection effect.} Theorists prefer ``natural'' gauge groups with rich
+representation theory, biasing the studied catalog toward exceptional Lie algebras. That the catalog
+tops out at $E_{8}$ reflects how Lie algebras are classified, not how nature is constrained. The fit
+to within $1.2\%$ may be an artifact.
+\item[\textbf{(C)}] \textbf{Structural.} The Compton-scale Bekenstein number is a real physical
+comparison point, and the Cartan exceptional sequence is the algebraic structure nature uses for
+elementary gauge symmetries broken to the observed Standard Model. This reading requires substantive
+additional input: a derivation connecting $\lbar$ to Lie-algebra dimensionality in some specific
+construction.
+\end{itemize}
+
+We claim only~(A) is well-supported by the present analysis. The quantity $2\,\dim(\mathrm{adj}\,G)$
+is naturally a one-particle Hilbert dimension only in the unbroken phase of the gauge symmetry, where
+all gauge bosons of the multiplet share gauge invariance under $G$ and are physically
+indistinguishable. In the Higgsed phase the gauge bosons separate into distinct massive species, each
+carrying its own $D = 3$ (three polarizations); the full multiplet's $2\,\dim(\mathrm{adj}\,G)$ is
+then a species count times a per-species dimension, not a single particle's internal dimension. The bound applies per-species in the broken phase, where each $D = 3$ is far below the ceiling.
+Comparing $e^{2\pi}$ to $2\,\dim(\mathrm{adj}\,G)$ across the broken/unbroken phase transition is the
+structural weakness of interpretation~(C).
+
+\section{Relationship to the species bound and the escrow series}
+
+The constraint that the number of light particle species is bounded by gravitational physics has a
+substantial literature. Bekenstein treats the multi-species case in his original work~[1] and 2005
+review~[2]. More recent quantum-gravity work~[6,7] sharpens this into the \emph{species bound}: with
+$N_{\mathrm{species}}$ light fields, the effective scale of strong gravity shifts down to
+$M_{P}/\sqrt{N}$, beyond which further species would induce strong-gravity effects at small energies.
+Saturon and related constructions in Dvali's recent work~[8] push the same logic to bounded composite
+objects.
+
+These constraints differ from the present one in a specific way: they bound the \emph{count of
+distinct species}, whereas the bound~(2) bounds the \emph{internal Hilbert dimension of a single
+elementary particle} at its own Compton scale. The two are orthogonal in principle and can be applied
+jointly:
+\begin{equation}
+  N_{\mathrm{species}} \le \text{(species bound, Dvali-type)},
+  \qquad
+  D_{\mathrm{internal}} \le e^{2\pi}\ \text{per species (Compton--Bekenstein)}.
+\end{equation}
+A theory with many species, each of small internal dimension, can saturate the species bound without
+saturating the per-species Compton--Bekenstein bound, and conversely. The present paper addresses only
+the per-species side, which has been less emphasized in the literature. The function notation $\Nesc$
+is borrowed from~[9], which formalizes a cross-regime observation about the static escrow construction $|U|/T$ producing the Bekenstein-bound form in three gravitational regimes (test mass at horizon, black-hole horizon, Rindler-wedge perturbation). The recipe $|U|/T$ does not apply to a free elementary particle in vacuum (no gravitational binding energy, no horizon temperature), so the present work is not an extension of the gravitational entropy escrow series~[9--14]---we use the notation only.
+
+\section{Limitations}
+\begin{itemize}
+\item[\textbf{(a)}] \textbf{Bound at boundary of applicability.} Eq.~(2) is applied where
+single-particle localization breaks down via pair production. The bound is to be read formally, with
+$D$ as the well-defined object.
+\item[\textbf{(b)}] \textbf{Composite resolution.} Particles with substructure at scales
+$L > \lbar$ (hadrons at the QCD scale) carry information at the larger scale, and the bound is not the
+operative constraint.
+\item[\textbf{(c)}] \textbf{Massless gauge bosons not constrained.} Photons, gluons, and gauge bosons
+of any unbroken gauge symmetry have no finite $\lbar$; they are outside the bound's domain.
+\item[\textbf{(d)}] \textbf{Species count versus internal dimension.} The identification ``one gauge
+boson of group $G$ has $D = 2\,\dim(\mathrm{adj}\,G)$'' in \S3 treats the full adjoint multiplet as a
+single object's internal Hilbert space; in the Higgsed phase the gauge bosons separate into distinct
+massive species, each with $D = 3$. The numerical coincidence stands as a fact about numbers, not a
+physics constraint.
+\item[\textbf{(e)}] \textbf{Not an extension of the escrow framework.} The present work uses $\Nesc$
+as notation but does not invoke the static escrow recipe $|U|/T$.
+\end{itemize}
+
+\section{Conclusion}
+
+For a massive elementary particle, Bekenstein's bound evaluated at its reduced Compton wavelength
+yields a mass-independent saturation value of $2\pi$ nats, equivalently a formal Hilbert-space dimension
+ceiling of $D \le e^{2\pi} \approx 535$. The bound is applied at the boundary of its formal domain
+(single-particle localization at the pair-production threshold). Standard Model massive particles
+satisfy the ceiling comfortably.
+
+We record the numerical coincidence that the largest exceptional Lie algebra dimension,
+$2\,\dim(\mathrm{adj}\,E_{8}) = 496$, sits $1.2\%$ below the ceiling in $\log_{2}$ space, and that the
+exceptional sequence $G_{2}, F_{4}, E_{6}, E_{7}, E_{8}$ climbs monotonically toward this point. We do
+not claim physical significance for this coincidence. The mismatch in domain of applicability between
+the bound (massive particles) and the natural setting of $2\,\dim(\mathrm{adj}\,G)$ (unbroken gauge
+symmetry, massless gauge bosons) makes the structural interpretation~(C) untenable without further
+argument we do not provide. The pattern is presented for future reference as a short empirical
+observation.
+
+\subsection*{Methodological note}
+This paper is a revised working draft that began with a broader claim: that the Compton-scale
+Bekenstein bound carves the gauge-group landscape of fundamental physics, with $E_{8}$ saturating to
+$98.8\%$ as evidence of structural significance. Peer review identified five technical problems with
+that framing: (i) the corollary positioning within the escrow series was undercut by the
+recipe-versus-function distinction; (ii) single-particle localization at $\lbar$ contends with pair
+production; (iii) $D = 2\,\dim(\mathrm{adj}\,G)$ conflates a per-species one-particle-state count with
+the broken-phase massive-species count; (iv) the heterotic-string preference argument applied the
+bound to massless gauge bosons of extended objects; (v) the comparison requires the bound to apply at
+the Compton scale of objects that have no such scale. The present version is what survives these
+objections. The pattern that motivated the earlier draft remains intriguing enough to record; the
+framework claims around it did not survive.
+
+\subsection*{Data, Code \& Resources}
+\noindent Manuscript source and archived record: \url{https://github.com/Windstorm-Institute/compton-corollary} (Zenodo: \href{https://doi.org/10.5281/zenodo.20163450}{10.5281/zenodo.20163450}). Experiments, datasets, and analysis code: \url{https://github.com/Windstorm-Labs/compton-corollary}. Windstorm Institute: \url{https://windstorminstitute.org}. Windstorm Labs: \url{https://windstormlabs.com}.
+
+\begin{thebibliography}{99}\small
+\bibitem{bek1} J.~D. Bekenstein, \textit{Universal upper bound on the entropy-to-energy ratio for
+bounded systems}, Phys.\ Rev.\ D \textbf{23}, 287 (1981).
+\bibitem{bek2} J.~D. Bekenstein, \textit{How does the entropy/information bound work?}, Found.\ Phys.\
+\textbf{35}, 1805 (2005). arXiv:quant-ph/0404042.
+\bibitem{casini} H.~Casini, \textit{Relative entropy and the Bekenstein bound}, Class.\ Quantum Grav.\
+\textbf{25}, 205021 (2008). arXiv:0804.2182.
+\bibitem{wigner} E.~P. Wigner, \textit{On unitary representations of the inhomogeneous Lorentz group},
+Ann.\ Math.\ \textbf{40}, 149 (1939).
+\bibitem{nw} T.~D. Newton and E.~P. Wigner, \textit{Localized states for elementary systems}, Rev.\
+Mod.\ Phys.\ \textbf{21}, 400 (1949).
+\bibitem{dvali1} G.~Dvali, \textit{Black holes and large $N$ species solution to the hierarchy
+problem}, Fortschr.\ Phys.\ \textbf{58}, 528 (2010). arXiv:0706.2050.
+\bibitem{dvali2} G.~Dvali and M.~Redi, \textit{Black hole bound on the number of species and quantum
+gravity at LHC}, Phys.\ Rev.\ D \textbf{77}, 045027 (2008). arXiv:0710.4344.
+\bibitem{dvali3} G.~Dvali, \textit{Entropy bound and unitarity of scattering amplitudes}, J.\ High
+Energy Phys.\ \textbf{03}, 126 (2021). arXiv:2003.05546.
+\bibitem{nesc} G.~L. Whitmer, \textit{The Nesc Recipe: A Cross-Regime Observation of Bekenstein-Bound
+Saturation from the Static Escrow Construction $|U|/T$}, Windstorm Institute (2026).
+DOI:10.5281/zenodo.20145105.
+\bibitem{escrow} G.~L. Whitmer, \textit{Spacetime as Escrow Bookkeeping}, Windstorm Institute (2026).
+DOI:10.5281/zenodo.20126090.
+\bibitem{lattice} G.~L. Whitmer, \textit{A Lattice QFT Test of the Static Escrow Postulate},
+Windstorm Institute (2026). DOI:10.5281/zenodo.20057537.
+\bibitem{c8} G.~L. Whitmer, \textit{On the Status of Local Entropy-Current Extensions of the
+Gravitational Entropy Escrow Framework}, Windstorm Institute (2026). DOI:10.5281/zenodo.20041991.
+\bibitem{synth} G.~L. Whitmer, \textit{Gravitational Entropy Escrow: An Interpretive Synthesis},
+Windstorm Institute (2026). DOI:10.5281/zenodo.20031931.
+\bibitem{phonon} G.~L. Whitmer, \textit{A Non-Equilibrium Efficiency Bound for Phonon Extraction in
+BEC Analog Gravity}, Windstorm Institute (2026). DOI:10.5281/zenodo.20014390.
+\end{thebibliography}
+
+\end{document}

@@ -1,0 +1,75 @@
+% wsi-style-lua.sty — lualatex house style: Palatino (TeX Gyre Pagella) with DejaVu fallback
+\ProvidesPackage{wsi-style-lua}
+\NeedsTeXFormat{LaTeX2e}
+\usepackage{amsmath,amsthm,mathtools}
+\usepackage{fontspec}
+\directlua{luaotfload.add_fallback("wsifb",
+  {"DejaVu Sans:mode=harf;", "DejaVu Serif:mode=harf;", "TeX Gyre Pagella Math:mode=harf;"})}
+\setmainfont{TeX Gyre Pagella}[RawFeature={fallback=wsifb}]
+\setsansfont{TeX Gyre Heros}[Scale=0.9]
+\setmonofont{TeX Gyre Cursor}[Scale=0.85]
+\usepackage{unicode-math}
+\setmathfont{TeX Gyre Pagella Math}
+\usepackage{microtype}
+\linespread{1.06}
+\usepackage{graphicx,booktabs,array}
+\usepackage{caption}
+\usepackage[shortlabels]{enumitem}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{setspace}
+\usepackage[letterpaper,textwidth=6.1in,textheight=8.7in,centering,headsep=18pt]{geometry}
+\usepackage[dvipsnames]{xcolor}
+\definecolor{wsilink}{RGB}{27,54,93}
+\usepackage[colorlinks=true,linkcolor=wsilink,citecolor=wsilink,urlcolor=wsilink,breaklinks=true]{hyperref}
+\titleformat{\section}{\normalfont\large\bfseries}{\thesection}{0.7em}{}
+\titleformat{\subsection}{\normalfont\normalsize\bfseries}{\thesubsection}{0.6em}{}
+\titleformat{\subsubsection}{\normalfont\normalsize\bfseries\itshape}{\thesubsubsection}{0.6em}{}
+\titlespacing*{\section}{0pt}{1.5ex plus 1ex minus .2ex}{0.9ex plus .2ex}
+\titlespacing*{\subsection}{0pt}{1.2ex plus .8ex minus .2ex}{0.6ex plus .2ex}
+\captionsetup{labelfont=bf,font=small,labelsep=period,justification=centerlast}
+\setlist{itemsep=2pt,topsep=3pt,parsep=0pt}
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{assumption}[theorem]{Assumption}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\pagestyle{fancy}\fancyhf{}
+\renewcommand{\headrulewidth}{0.4pt}
+\newcommand{\wsirunhead}[1]{\fancyhead[L]{\footnotesize\scshape #1}}
+\fancyhead[R]{\footnotesize\thepage}
+\fancypagestyle{plain}{\fancyhf{}\fancyhead[R]{\footnotesize\thepage}\renewcommand{\headrulewidth}{0pt}}
+\newcommand{\wsiaffil}{Windstorm Institute, Fort Ann, New York 12827, USA}
+\newcommand{\wsiemail}{grant@windstorminstitute.org}
+\newcommand{\wsiorcid}{0009-0007-3224-755X}
+\makeatletter
+\renewcommand{\maketitle}{%
+  \begin{center}
+    {\LARGE\bfseries\@title\par}\vspace{1.1em}
+    {\large\@author\par}\vspace{0.5em}
+    {\itshape\wsiaffil\par}\vspace{0.25em}
+    {\small\texttt{\wsiemail}\quad\textbullet\quad ORCID: \wsiorcid\par}\vspace{0.35em}
+    {\small\@date\par}
+  \end{center}
+  \vspace{0.4em}\hrule\vspace{1.4em}
+}
+\makeatother
+\renewenvironment{abstract}{%
+  \vspace{0.3em}\begin{center}\small\bfseries Abstract\end{center}\vspace{-0.1em}%
+  \begin{list}{}{\setlength{\leftmargin}{0.5in}\setlength{\rightmargin}{0.5in}%
+    \setlength{\topsep}{0pt}\setlength{\parsep}{0pt}\setlength{\itemsep}{0pt}}%
+  \item[]\small\linespread{1.0}\selectfont\noindent\ignorespaces
+}{%
+  \end{list}\vspace{0.5em}\hrule\vspace{1.6em}
+}
+
+% --- URL line-breaking (prevent overfull hbox on long repo/DOI URLs) ---
+\makeatletter
+\g@addto@macro\UrlBreaks{\do\/\do\-\do\.\do\_}
+\makeatother
+\Urlmuskip=0mu plus 1mu\relax
