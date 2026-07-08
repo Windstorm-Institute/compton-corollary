@@ -4,13 +4,13 @@
 
 Grant Lavell Whitmer III · Windstorm Labs, The Windstorm Institute · Fort Ann, NY, USA
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20163451-blue)](https://doi.org/10.5281/zenodo.20163451)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20163450-blue)](https://doi.org/10.5281/zenodo.20163450)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey)](https://creativecommons.org/licenses/by/4.0/)
 [![Track: Entropic Bounds](https://img.shields.io/badge/Track-2_·_Entropic_Bounds-8b5cf6)](https://windstorminstitute.org/#track2)
 
-**Zenodo**: [10.5281/zenodo.20163451](https://doi.org/10.5281/zenodo.20163451) · **Current version: v0.4** (May 2026)
+**Zenodo**: [10.5281/zenodo.20163450](https://doi.org/10.5281/zenodo.20163450) · **Current version: v0.4** (May 2026)
 
-**Notation borrowed from:** [Paper 15 — The 𝒩<sub>esc</sub> Recipe](https://github.com/Windstorm-Institute/nesc-recipe) ([10.5281/zenodo.20145106](https://doi.org/10.5281/zenodo.20145106))
+**Notation borrowed from:** [Paper 15 — The 𝒩<sub>esc</sub> Recipe](https://github.com/Windstorm-Institute/nesc-recipe) ([10.5281/zenodo.20145105](https://doi.org/10.5281/zenodo.20145105))
 
 > **A note on series membership.** This is a *short empirical observation paper*. It uses the 𝒩<sub>esc</sub>(*E*, *L*) ≡ 2π*EL*/(ℏ*c*) notation introduced in Paper 15, but **does not invoke the escrow recipe** of Papers 11/14/15. The function under evaluation here is Bekenstein's; the recipe of [9] applies only to gravitational regimes, and a free elementary particle in vacuum is not one of them. The corollary stands or falls on its own merits.
 
@@ -52,7 +52,7 @@ The paper is unusually explicit (§6) about the domain mismatches and interpreti
 ## Read the Paper
 
 - **[paper.pdf](paper.pdf)** — full academic paper (v0.4)
-- **[Zenodo record](https://doi.org/10.5281/zenodo.20163451)** — archived with DOI
+- **[Zenodo record](https://doi.org/10.5281/zenodo.20163450)** — archived with DOI
 - **[Website article](https://windstorminstitute.org/articles/compton-corollary.html)** — long-form companion
 
 ## Companion code
@@ -65,13 +65,13 @@ The paper is unusually explicit (§6) about the domain mismatches and interpreti
 
 | # | Paper | DOI |
 |---|---|---|
-| 10 | [Phonon Extraction Bound](https://github.com/Windstorm-Institute/phonon-extraction-bound) | [10.5281/zenodo.20014391](https://doi.org/10.5281/zenodo.20014391) |
-| 11 | [Gravitational Entropy Escrow](https://github.com/Windstorm-Institute/gravitational-entropy-escrow) *(framework)* | [10.5281/zenodo.20032023](https://doi.org/10.5281/zenodo.20032023) |
-| 12 | [C8 Clarification Note](https://github.com/Windstorm-Institute/c8-clarification-note) | [10.5281/zenodo.20041992](https://doi.org/10.5281/zenodo.20041992) |
-| 13 | [Lattice QFT Test](https://github.com/Windstorm-Institute/lattice-qft-test) | [10.5281/zenodo.20057538](https://doi.org/10.5281/zenodo.20057538) |
-| 14 | [Spacetime as Escrow Bookkeeping](https://github.com/Windstorm-Institute/escrow-spacetime) | [10.5281/zenodo.20126091](https://doi.org/10.5281/zenodo.20126091) |
-| 15 | [The 𝒩<sub>esc</sub> Recipe](https://github.com/Windstorm-Institute/nesc-recipe) | [10.5281/zenodo.20145106](https://doi.org/10.5281/zenodo.20145106) |
-| 16 | [The Compton Corollary](https://github.com/Windstorm-Institute/compton-corollary) *(this paper — short Bekenstein observation; uses 𝒩<sub>esc</sub> notation only, recipe not invoked)* | [10.5281/zenodo.20163451](https://doi.org/10.5281/zenodo.20163451) |
+| 10 | [Phonon Extraction Bound](https://github.com/Windstorm-Institute/phonon-extraction-bound) | [10.5281/zenodo.20014390](https://doi.org/10.5281/zenodo.20014390) |
+| 11 | [Gravitational Entropy Escrow](https://github.com/Windstorm-Institute/gravitational-entropy-escrow) *(framework)* | [10.5281/zenodo.20031931](https://doi.org/10.5281/zenodo.20031931) |
+| 12 | [C8 Clarification Note](https://github.com/Windstorm-Institute/c8-clarification-note) | [10.5281/zenodo.20041991](https://doi.org/10.5281/zenodo.20041991) |
+| 13 | [Lattice QFT Test](https://github.com/Windstorm-Institute/lattice-qft-test) | [10.5281/zenodo.20057537](https://doi.org/10.5281/zenodo.20057537) |
+| 14 | [Spacetime as Escrow Bookkeeping](https://github.com/Windstorm-Institute/escrow-spacetime) | [10.5281/zenodo.20126090](https://doi.org/10.5281/zenodo.20126090) |
+| 15 | [The 𝒩<sub>esc</sub> Recipe](https://github.com/Windstorm-Institute/nesc-recipe) | [10.5281/zenodo.20145105](https://doi.org/10.5281/zenodo.20145105) |
+| 16 | [The Compton Corollary](https://github.com/Windstorm-Institute/compton-corollary) *(this paper — short Bekenstein observation; uses 𝒩<sub>esc</sub> notation only, recipe not invoked)* | [10.5281/zenodo.20163450](https://doi.org/10.5281/zenodo.20163450) |
 
 ---
 
@@ -88,8 +88,8 @@ The paper is unusually explicit (§6) about the domain mismatches and interpreti
   year         = 2026,
   publisher    = {Zenodo},
   version      = {v0.4},
-  doi          = {10.5281/zenodo.20163451},
-  url          = {https://doi.org/10.5281/zenodo.20163451}
+  doi          = {10.5281/zenodo.20163450},
+  url          = {https://doi.org/10.5281/zenodo.20163450}
 }
 ```
 
